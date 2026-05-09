@@ -1,0 +1,10 @@
+# Builds
+build
+
+# Project user file
+*.user
+
+# Temp/Hidden/System files
+*.DS_Store
+*~
+

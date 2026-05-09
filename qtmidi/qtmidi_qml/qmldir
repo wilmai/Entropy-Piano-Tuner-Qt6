@@ -1,0 +1,7 @@
+module QtMidi
+plugin qtmidi_qml
+classname QtMidiQmlModule
+typeinfo plugins.qmltypes
+MidiInputComboBox 5.0 MidiInputComboBox.qml
+MidiOutputComboBox 5.0 MidiOutputComboBox.qml
+MidiPowerBar 5.0 MidiPowerBar.qml

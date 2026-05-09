@@ -1,7 +1,7 @@
 TEMPLATE = lib
 CONFIG += dll c++11 noqt
 CONFIG -= qt
-DESTDIR = $$shadowed($$PWD)
+win32: DESTDIR = $$shadowed($$PWD)
 
 # library settings for uv
 TARGET = uv

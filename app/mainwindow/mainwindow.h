@@ -25,7 +25,7 @@
 #include <QToolButton>
 #include <memory>
 
-#include <QtMidi/qmidiautoconnector.h>
+#include <qtmidi/qmidiautoconnector.h>
 
 #include "prerequisites.h"
 

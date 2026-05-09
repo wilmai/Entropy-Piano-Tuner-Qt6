@@ -176,7 +176,7 @@ defineReplace(depends_qwt) {
         CONFIG += qwt
     } else {
         INCLUDEPATH += $$EPT_THIRDPARTY_DIR/qwt-lib/src
-        LIBS += -L$$EPT_ROOT_OUT_DIR/thirdparty/qwt-lib
+        LIBS += -L$$EPT_ROOT_OUT_DIR/thirdparty/qwt-lib/lib
     }
 
     win32 {
@@ -200,7 +200,7 @@ defineReplace(depends_qwt) {
             $$EPT_ROOT_OUT_DIR/thirdparty/qwt-lib/libqwt.so
     } else:!contains(EPT_THIRDPARTY_CONFIG, system_qwt) {
         LIBS += -lqwt
-        DLLS += "$$EPT_ROOT_OUT_DIR/thirdparty/qwt-lib/libqwt.so*"
+        DLLS += "$$EPT_ROOT_OUT_DIR/thirdparty/qwt-lib/lib/libqwt.so*"
     } else {
         LIBS += -lqwt-qt6
     }
@@ -249,6 +249,7 @@ defineReplace(depends_qtmidi) {
     INCLUDEPATH += $$EPT_ROOT_DIR/qtmidi
     LIBS += -L$$EPT_ROOT_DIR/qtmidi/qtmidi/lib -lqtmidi
     win32:LIBS += -lwinmm
+    linux:!android:LIBS += -lasound
     export(INCLUDEPATH)
     export(LIBS)
     return(true)

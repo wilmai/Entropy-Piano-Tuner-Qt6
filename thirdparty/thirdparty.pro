@@ -21,7 +21,10 @@ libuv {
     }
 }
 
-!contains(EPT_THIRDPARTY_CONFIG, system_qwt):SUBDIRS += qwt-lib
+!contains(EPT_THIRDPARTY_CONFIG, system_qwt) {
+    SUBDIRS += qwt-lib
+    qwt-lib.file = qwt-lib/qwt.pro
+}
 
 winrtbridge {
     SUBDIRS += winrtbridge
