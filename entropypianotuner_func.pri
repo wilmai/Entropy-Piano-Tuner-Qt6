@@ -116,7 +116,7 @@ defineReplace(depends_fftw3) {
             } else:android {
                 ANDROID_EXTRA_LIBS += $$FFTW_DESTDIR/libfftw3.so
             } else:linux {
-                DLLS += $$FFTW_DESTDIR/libfftw3.so
+                DLLS += "$$FFTW_DESTDIR/libfftw3.so*"
             }
         }
     }

@@ -421,7 +421,8 @@ RESOURCES += \
 
 contains(EPT_CONFIG, install) {
     # add the install dir for the core the the rpath
-    unix:QMAKE_RPATHDIR += $$EPT_INSTALL_LIB_RDIR/entropypianotuner
+    # "." -> $ORIGIN so dev builds find sibling libs in bin/
+    unix:QMAKE_RPATHDIR += . $$EPT_INSTALL_LIB_RDIR/entropypianotuner
 
     target.path = $$EPT_INSTALL_BIN_DIR
 

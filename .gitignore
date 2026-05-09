@@ -60,8 +60,24 @@ publish/
 
 # Qt generated
 moc_*.cpp
+moc_predefs.h
 ui_*.h
 qrc_*.cpp
+
+# qmake configure/build artifacts
+.qmake.cache
+config.log
+
+# versioned shared libraries (e.g. libuv.so.1.0.0)
+*.so.*
+
+# qtmidi example binaries (name matches parent directory)
+qtmidi/examples/midi/midiautoconnector/midiautoconnector
+qtmidi/examples/midi/midiautoconnector_quick/midiautoconnector_quick
+qtmidi/examples/midi/midiforwarding/midiforwarding
+qtmidi/examples/midi/midimonitor/midimonitor
+qtmidi/examples/midi/midimultiforwarding/midimultiforwarding
+qtmidi/examples/midi/miditerminal/miditerminal
 
 # archives
 *.tar.gz

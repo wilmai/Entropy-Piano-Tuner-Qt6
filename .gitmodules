@@ -1,13 +1,17 @@
 [submodule "thirdparty/fftw3"]
 	path = thirdparty/fftw3
 	url = https://gitlab.com/chwick/fftw3-qmake.git
+	ignore = untracked
 [submodule "thirdparty/libuv/libuv"]
 	path = thirdparty/libuv/libuv
 	url = https://github.com/libuv/libuv.git
+	ignore = untracked
 [submodule "thirdparty/qwt-lib"]
 	path = thirdparty/qwt-lib
 	url = https://github.com/opencor/qwt.git
 	branch = opencor
+	ignore = untracked
 [submodule "thirdparty/tp3log"]
 	path = thirdparty/tp3log
 	url = https://gitlab.com/tp3/tp3log.git
+	ignore = untracked
